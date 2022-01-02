@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.dfb4ef1b.js",
+    "main.css": "/portfolio/static/css/main.8f7e21de.css",
+    "main.js": "/portfolio/static/js/main.8ceaf3c6.js",
     "static/js/787.9b9c0edf.chunk.js": "/portfolio/static/js/787.9b9c0edf.chunk.js",
     "static/media/reactnative-bpccs.gif": "/portfolio/static/media/reactnative-bpccs.fe9c4c9c055c39b21cb5.gif",
     "static/media/flutter-vaccation.gif": "/portfolio/static/media/flutter-vaccation.ccc90282bb515f44e85f.gif",
@@ -12,6 +12,7 @@
     "static/media/reactnative-bpccs.png": "/portfolio/static/media/reactnative-bpccs.e4ad407845e362782125.png",
     "static/media/reactjs-blog.png": "/portfolio/static/media/reactjs-blog.3ad271c5db0ac43148ca.png",
     "static/media/flutter-vaccation.png": "/portfolio/static/media/flutter-vaccation.13511cf644f2566d9eaa.png",
+    "static/media/hero1.jpg": "/portfolio/static/media/hero1.eddd03b5505d6afde239.jpg",
     "static/media/reactjs-events.png": "/portfolio/static/media/reactjs-events.5ccad3d2773254716fa8.png",
     "static/media/reactjs-sbuikit.png": "/portfolio/static/media/reactjs-sbuikit.8f708fbdfad1973832cc.png",
     "static/media/flutter-epayment.png": "/portfolio/static/media/flutter-epayment.bb720194c98d598fb86d.png",
@@ -22,6 +23,7 @@
     "static/media/xamarinform-registration.png": "/portfolio/static/media/xamarinform-registration.ec49a2c36df55143a72c.png",
     "static/media/xamarinform-eticket.png": "/portfolio/static/media/xamarinform-eticket.963f17326c095dcceb6c.png",
     "static/media/reactnative-meetup.png": "/portfolio/static/media/reactnative-meetup.2dbf65b8ccac7834c1a1.png",
+    "static/media/me.png": "/portfolio/static/media/me.a12fe2b29e9b299eedc7.png",
     "static/media/reactnative-rapidinfo.png": "/portfolio/static/media/reactnative-rapidinfo.994012b0f6b4a846cf3a.png",
     "static/media/xamarinform-login.png": "/portfolio/static/media/xamarinform-login.7f29189453e3f8a506b7.png",
     "static/media/9.jpeg": "/portfolio/static/media/9.dea6c4874cbb61e218c0.jpeg",
@@ -35,14 +37,13 @@
     "static/media/ios.png": "/portfolio/static/media/ios.4e51711b01e5dad39b69.png",
     "static/media/7.jpeg": "/portfolio/static/media/7.29114c9f1dfe56e5d578.jpeg",
     "static/media/interior.jpeg": "/portfolio/static/media/interior.90e4c1db18f26431f5ff.jpeg",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.dfb4ef1b.js.map": "/portfolio/static/js/main.dfb4ef1b.js.map",
+    "main.8f7e21de.css.map": "/portfolio/static/css/main.8f7e21de.css.map",
+    "main.8ceaf3c6.js.map": "/portfolio/static/js/main.8ceaf3c6.js.map",
     "787.9b9c0edf.chunk.js.map": "/portfolio/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.dfb4ef1b.js"
+    "static/css/main.8f7e21de.css",
+    "static/js/main.8ceaf3c6.js"
   ]
 }
