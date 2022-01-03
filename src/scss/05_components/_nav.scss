@@ -1,0 +1,140 @@
+.navbar{
+
+    z-index: 999;
+    min-height: 6rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.4s ease;
+    // @include bgcolor-secondary;
+    background-color: #eff6ffc7;
+
+    @include respond($medium){
+        @include navbar-dark;
+    }
+
+    .nav-container{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond($small){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .logo-container{
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+            @include respond($medium){
+                flex-basis: 100%;
+            }
+            
+            .logo{
+                font-weight: bold;
+                font-size: 1.8rem;
+                transition: all 0.4s ease;
+                padding-bottom: 0;
+
+                a{
+                    color: $primary;
+                    &:hover{
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .toggleMenuIcon{
+                font-size: 2rem;
+                color: white;
+                display: none;
+
+                @include respond($medium){
+                    display: block;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .menu-container{
+            align-items: center;
+            @include respond($medium){
+                background-color: $primary;
+                position: absolute;
+                width: 100%;
+                height: 13rem;            
+                left: 0;
+                top: 6rem;
+                overflow: hidden;
+                transition: all 0.4s ease;
+            }
+            .menu{
+                display: flex;
+                list-style: none;
+                padding-right: 0;
+        
+                li{
+                    margin-left: 2rem;
+                    font-weight: 500;
+                    transition: all 0.4s ease;
+        
+                    &:nth-last-of-type(7){
+                        margin-left: 0rem;
+                    }
+
+                    a{
+                        color: $primary;
+                        transition: color 250ms ease-in-out;
+
+                        &:hover{
+                            color: $secondary;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                @include respond($medium){
+                    flex-direction: column;
+                    li{
+                        margin-left: 0;
+                        margin-top: 1rem;
+
+                        &:nth-last-of-type(5){
+                            margin-top: 0;
+                        }
+
+                        &:hover{
+                            color: $secondary !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shift-menu{
+            @include respond($medium){
+                top: 5rem;
+                transition: all 0.4s ease;
+            }
+        }
+
+        .hide-menu{
+            @include respond($medium){
+                height: 0;
+            }
+        }
+    }
+}
+
+.active{
+    @include navbar-dark;
+    min-height: 5rem;
+}

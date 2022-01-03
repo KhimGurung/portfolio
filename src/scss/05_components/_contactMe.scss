@@ -1,0 +1,38 @@
+.contact-me{
+    // background-color: $background-secondary;
+    background-color: #f5f8fb;
+    .section-wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
+
+        @include respond($medium){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    .contact-me-btn{
+        background-color: white;
+        color: $primary;
+        border: solid 1px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: $primary;
+            color: white;
+        }
+
+        @include respond($medium){
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+#ene{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+        .sub-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .timeline{
+                position: relative;
+    
+                ul{
+                    list-style: none;
+                    margin-left: 1.5rem;
+                
+                    li{
+                        margin-bottom: 2.5rem;
+                        position: relative;
+
+                        p{
+                            padding: 0;
+                        }
+
+                        p:nth-child(2){
+                            color: $primary;
+                        }
+
+                        p:nth-child(3),
+                        ul:nth-child(3){
+                            margin-top: 0.6rem;
+                        }
+
+                        ul{
+                            li{
+                                margin-bottom: 0rem;
+                            }
+                            li::before{
+                                content: '';
+                                position: absolute;
+                                height: 5px;
+                                width: 5px;
+                                border-radius: 5px;
+                                background-color: $primary;
+                                margin-left: -0.7rem;
+                                transform: translateX(-50%);
+                                top: 0.6rem;
+                            }
+                        }
+                    }
+            
+                    li:last-child{
+                        margin-bottom: 0;
+                    }
+            
+                    li:before{
+                        content: '';
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 3px;
+                        background-color: white;
+                        border: 1px solid $secondary;
+                        margin-left: -1.5rem;
+                        transform: translateX(-50%);
+                        top: 0.6rem;
+                    }
+            
+                    h3{
+                        padding-bottom: 0;
+                    }
+        
+            
+                    // p:nth-child(3){
+                    //     margin-top: 0.6rem;
+                    // }
+                }
+            }
+    
+            .timeline::before{
+                content: '';
+                position: absolute;
+                background-color: $secondary;
+                height: 100%;
+                width: 1px;
+                top: 0.6rem;
+            }
+        }
+    }
+
+    @include respond($large){
+        .container{
+            display: block;
+        }
+
+        ul li{
+            max-width: 100% !important;
+        }
+
+        .sub-container:nth-last-of-type(1){
+            margin-top: 7rem;
+        }
+    }
+}

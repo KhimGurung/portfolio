@@ -1,0 +1,21 @@
+.contact{
+    display: flex;
+    margin-bottom: 8rem;
+    position: relative;
+
+    > * { 
+        flex: 1
+    }
+
+    img{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .contact-form,
+    .contact-info{
+        z-index: 2
+    }
+}

@@ -1,0 +1,23 @@
+@mixin respond($breakpoint) {
+    @media only screen and (max-width: $breakpoint) { @content; }
+}
+
+@mixin bgcolor-primary{
+    background-color: $background-primary;
+}
+
+@mixin bgcolor-secondary{
+    background-color: $background-secondary;
+}
+
+@mixin navbar-dark{
+    background-color: $primary;
+    .logo a, li a{
+        color: white !important;
+
+        &:hover{
+            color: $secondary !important;
+            cursor: pointer;
+        }
+    }
+}

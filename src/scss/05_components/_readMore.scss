@@ -1,0 +1,32 @@
+.post-read-more{
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    align-self: flex-start;
+    margin-top: 1rem;
+
+    a{
+        color: $secondary;
+        font-size: 0.8rem;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:hover > a, 
+    &:hover > svg{
+        color: $primary
+    }
+
+    &:hover > svg{
+        margin-left: 1rem;
+    }
+
+    svg{
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        color: $secondary;
+        transition: margin-left 250ms ease-in-out;
+    }
+}

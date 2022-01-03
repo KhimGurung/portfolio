@@ -1,0 +1,18 @@
+#my-work{
+    background: linear-gradient(172deg, $background-secondary , #ffffff);
+
+    .work-container{
+        display: grid;
+        gap: 2rem;
+        row-gap: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+        @include respond($medium){
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
+
+    .my-work-btn-container{
+        padding-top: 3rem;
+    }
+}

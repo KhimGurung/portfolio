@@ -1,0 +1,28 @@
+.featured-article{
+    height: 28rem;
+    position: relative;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .gradient-background{
+        background-image: linear-gradient(transparent, black);
+        opacity: 0.8;
+    }
+
+    .featured-article-info{
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 60% !important;
+
+        p, h2{
+            color: $white;
+        }
+    }
+}

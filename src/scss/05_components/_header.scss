@@ -1,0 +1,115 @@
+header{
+    background-color: $background-secondary;
+    height: 100vh;
+    min-height: 50rem;
+    position: relative;
+    .header-background{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        @include respond($medium){
+            grid-template-columns: 1fr;
+        }
+
+        .banner-image-container{
+            position: relative;
+            grid-column: 2/3;
+            @include respond($medium){
+                grid-column: 1/2;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: transparent;
+                height: 100%;
+                width: 100%;
+                top:0;
+                left: 0;
+                @include respond($medium){
+                    background-color: #eff6ffbd;
+                }
+            }
+        }
+    }
+
+    .header-container{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+
+        .container{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+            height: 100%;
+            @include respond($medium){
+                grid-template-columns: 1fr;
+            }
+
+            .banner-text-container{
+                @include respond($medium){
+                    text-align: center;
+                }
+
+                h1{
+                    font-size: 65px;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    line-height: 3.5rem;
+                    font-weight: 600;
+                    transition: font-size 250ms ease-in-out;
+
+                    @include respond($large){
+                        font-size: 6vw;
+                    }
+
+                    @include respond($medium){
+                        font-size: 11vw;
+                        line-height: 5rem;
+                    }
+
+                    @include respond($small){
+                        font-size: 2.9rem;
+                        line-height: 3.5rem;
+                    }
+                }
+                h3{
+                    color: $secondary;
+                    font-weight: 300;
+                    @include respond($small){
+                        font-size: 1.5rem;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+        svg{
+            position: absolute;
+            bottom: 0;
+            height: 250px;
+            width: 100%;
+            transition: all 300ms ease-in-out;
+
+            @include respond($small){
+                height: 80px;
+            }
+
+            path{
+                fill: white;
+                fill-opacity: 1;
+            }
+        }
+    
+}

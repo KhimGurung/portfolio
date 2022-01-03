@@ -1,0 +1,11 @@
+.myservices-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+
+    @include respond($medium){
+        grid-template-columns: 1fr;
+        column-gap: 0;;
+    }
+}

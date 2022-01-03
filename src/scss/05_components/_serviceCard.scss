@@ -1,0 +1,23 @@
+.service{
+    background-color: $background-secondary;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p, h3{
+        text-align: justify;
+    }
+    
+    @include respond($medium){
+        margin-bottom: 2rem;
+    }
+
+    .service-icon{
+        font-size: 52px;
+        color: $primary;
+        margin-bottom: 2.5rem;
+    }
+}

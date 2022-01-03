@@ -1,0 +1,37 @@
+#my-skills{
+    // background-color: $background-secondary;
+    background-color: #f5f8fb;
+
+    .skills{
+        display: flex;
+        @include respond($small){
+            flex-direction: column;
+        }
+        .language{
+            flex: 1;
+            div{
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .library{
+            flex: 1;
+            display: flex;
+            align-self: baseline;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            div{
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            @include respond($small){
+                margin-top: 2rem;
+                justify-content: flex-start;
+                margin-left: -1rem
+            }
+        }
+
+    }
+}
